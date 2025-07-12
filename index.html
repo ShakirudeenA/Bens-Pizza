@@ -18,20 +18,27 @@
     <nav>
         <div class="container">
             <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
                 <li><a href="#overview">Overview</a></li>
                 <li><a href="#process">Process</a></li>
-                <li><a href="#dashboard">Dashboard</a></li>
                 <li><a href="#insights">Key Insights</a></li>
                 <li><a href="#reflections">Reflections</a></li>
             </ul>
         </div>
     </nav>
 
-    <section id="hero">
+    <section id="banner" class="banner-section">
         <div class="container">
-            <div class="hero-content">
-                <h2>Power BI Dashboard for Ben's Pizza</h2>
-                <p>Analyzing the impact of a menu optimization strategy across NYC and Philadelphia locations</p>
+            <img src="Banner.png" alt="Ben's Pizza Banner" class="banner-img">
+        </div>
+    </section>
+
+    <section id="dashboard" class="dashboard-hero">
+        <div class="container">
+            <h2>Interactive Power BI Dashboard</h2>
+            <p>Explore the interactive dashboard below. Click on any element to filter the data.</p>
+            <div class="dashboard-embed">
+                <iframe title="Bens_pizza" width="100%" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiZjU4ZjM3NTQtNTM1NC00Yzc5LThkYTctZWYzOWQ1NjdiYzQ2IiwidCI6IjZlZmQwZjIwLTU3YzgtNDQ0Ny1iNTNmLTAwZDQ5OTJjYTUwYiJ9" frameborder="0" allowFullScreen="true"></iframe>
             </div>
         </div>
     </section>
@@ -44,8 +51,9 @@
                     <p>I was commissioned by Ben's Pizza, a restaurant chain with branches in New York City and Philadelphia, to build a Power BI dashboard that would summarize their January sales performance.</p>
                     <p>This month held particular importance as it marked the launch of their newly shortened menu. A strategic move aimed to not only form a clearer brand identity, but to also improve operational efficiency.</p>
                     <p>With these changes being trialed in their NYC and PHL branches, Ben's Pizza's management wanted a simple and effective way to assess the impact. They enlisted me to create a clear and accessible visual summary that could communicate the month's outcomes to staff and shareholders alike.</p>
+                    <p>The dashboard needed to highlight key performance metrics, compare locations, and provide insights into customer preferences. By analyzing this data, management could make informed decisions about their menu optimization strategy and operational improvements.</p>
                 </div>
-                <div class="image">
+                <div class="image menu-image">
                     <img src="Bens_pizza_New_New Menu.png" alt="Ben's Pizza Menu" class="overview-img">
                 </div>
             </div>
@@ -102,25 +110,6 @@
                     <li><strong>Order total miscalculations</strong> - Recalculated and corrected order totals</li>
                 </ul>
                 <p>After cleaning, the data was normalized to 3NF (Third Normal Form) by creating separate tables for customers, menu items, addresses, orders, and order items.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="dashboard">
-        <div class="container">
-            <h2>Interactive Dashboard</h2>
-            <div class="dashboard-container">
-                <img src="Dashboard Complete (no tooltips + comments).png" alt="Ben's Pizza Dashboard" class="dashboard-img">
-                <div class="dashboard-description">
-                    <h3>Key Features</h3>
-                    <ul>
-                        <li><strong>Interactive Filters</strong> - Click on any element to filter all other visuals</li>
-                        <li><strong>Location Comparison</strong> - Compare performance between NYC and Philadelphia</li>
-                        <li><strong>Time Analysis</strong> - Track sales performance throughout the month</li>
-                        <li><strong>Product Performance</strong> - Identify top-selling items and categories</li>
-                        <li><strong>Revenue Metrics</strong> - Monitor key financial indicators</li>
-                    </ul>
-                </div>
             </div>
         </div>
     </section>
