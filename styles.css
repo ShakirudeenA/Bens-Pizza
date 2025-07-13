@@ -566,7 +566,7 @@ footer {
 }
 
 .marker-item {
-    background-color: #f9f9f9;
+    background-color: #fff;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -574,7 +574,10 @@ footer {
     flex-direction: column;
     justify-content: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-left: 4px solid var(--primary-color);
+    border-left: 4px solid #d62828;
+    border-top: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
 }
 
 .marker-item:hover {
@@ -583,23 +586,23 @@ footer {
 }
 
 .marker-item:nth-child(1) {
-    background-color: #f8f4ff;
-    border-left-color: #6a4c93;
+    background-color: #fff;
+    border-left-color: #d62828;
 }
 
 .marker-item:nth-child(2) {
-    background-color: #fff4f4;
-    border-left-color: var(--primary-color);
+    background-color: #fff;
+    border-left-color: #d62828;
 }
 
 .marker-item:nth-child(3) {
-    background-color: #f4fff6;
-    border-left-color: #2ecc71;
+    background-color: #fff;
+    border-left-color: #d62828;
 }
 
 .marker-item:nth-child(4) {
-    background-color: #fff8f0;
-    border-left-color: #f39c12;
+    background-color: #fff;
+    border-left-color: #d62828;
 }
 
 /* Marker Title */
@@ -608,7 +611,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 600;
-    color: #555;
+    color: #666;
     margin-bottom: 10px;
     position: relative;
     display: inline-block;
@@ -621,23 +624,14 @@ footer {
     height: 2px;
     bottom: -4px;
     left: 0;
-    background-color: rgba(0,0,0,0.1);
+    background-color: #d62828;
 }
 
-.marker-item:nth-child(1) .marker-title:after {
-    background-color: #6a4c93;
-}
-
-.marker-item:nth-child(2) .marker-title:after {
-    background-color: var(--primary-color);
-}
-
-.marker-item:nth-child(3) .marker-title:after {
-    background-color: #2ecc71;
-}
-
+.marker-item:nth-child(1) .marker-title:after,
+.marker-item:nth-child(2) .marker-title:after,
+.marker-item:nth-child(3) .marker-title:after,
 .marker-item:nth-child(4) .marker-title:after {
-    background-color: #f39c12;
+    background-color: #d62828;
 }
 
 /* Menu Display - Right Side */
@@ -700,7 +694,7 @@ footer {
 
 .marker-item .metric-label {
     font-size: 0.9rem;
-    color: #777;
+    color: #666;
     letter-spacing: 1px;
     font-weight: 500;
 }
@@ -724,7 +718,7 @@ footer {
 .marker-item .highlight-value {
     font-size: 2rem;
     font-weight: 700;
-    color: #2ecc71;
+    color: #d62828;
     font-family: 'Montserrat', sans-serif;
     margin: 5px 0;
     display: flex;
@@ -734,11 +728,12 @@ footer {
 
 .marker-item .highlight-value i {
     font-size: 1.2rem;
+    color: #d62828;
 }
 
 .marker-item .highlight-subtext {
     font-size: 0.9rem;
-    color: #777;
+    color: #666;
 }
 
 .marker-item .popular .highlight-header {
