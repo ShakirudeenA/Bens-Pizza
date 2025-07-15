@@ -47,9 +47,3 @@ The Power BI dashboard includes:
 - Time analysis
 - Product performance metrics
 - Revenue tracking
-
-## License
-This project is for demonstration purposes only.
-
-## Contact
-For more information about this project, please contact the repository owner. 
