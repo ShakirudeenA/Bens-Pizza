@@ -19,7 +19,7 @@
         <div class="container">
             <ul>
                 <li><a href="#dashboard">Dashboard</a></li>
-                <li><a href="#overview">Overview</a></li>
+                <li><a href="#business-context">Business Context</a></li>
                 <li><a href="#process">Process</a></li>
                 <li><a href="#insights">Key Insights</a></li>
                 <li><a href="#reflections">Reflections</a></li>
@@ -37,8 +37,8 @@
         <div class="container">
             <h2>Interactive Power BI Dashboard</h2>
             <p>Explore the interactive dashboard below. Click on any element to filter the data.</p>
-            <div class="dashboard-embed">
-                <iframe title="Bens_pizza" width="100%" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiZjU4ZjM3NTQtNTM1NC00Yzc5LThkYTctZWYzOWQ1NjdiYzQ2IiwidCI6IjZlZmQwZjIwLTU3YzgtNDQ0Ny1iNTNmLTAwZDQ5OTJjYTUwYiJ9" frameborder="0" allowFullScreen="true"></iframe>
+            <div class="dashboard-container">
+                <iframe title="Bens_pizza" width="800" height="836" src="https://app.powerbi.com/view?r=eyJrIjoiZjU4ZjM3NTQtNTM1NC00Yzc5LThkYTctZWYzOWQ1NjdiYzQ2IiwidCI6IjZlZmQwZjIwLTU3YzgtNDQ0Ny1iNTNmLTAwZDQ5OTJjYTUwYiJ9" frameborder="0" allowFullScreen="true"></iframe>
             </div>
         </div>
     </section>
@@ -48,166 +48,59 @@
             <h2 class="section-title">Business Context & Objectives</h2>
             
             <div class="business-context-container">
-                <!-- Menu Redesign Initiative Section -->
-                <div class="menu-redesign-header">
-                    <div class="header-icon">
-                        <i class="fas fa-utensils"></i>
-                    </div>
-                    <h3>Menu Redesign Initiative</h3>
-                </div>
-                
-                <div class="initiative-content">
-                    <p>This month held particular importance as it marked the launch of their newly shortened menu, a strategic move to reinforce brand identity and improve operational efficiency.</p>
-                    
-                    <p>With these changes trialed across NYC and PHL branches, management wanted a way to evaluate impact. I was tasked with building a clear, visual summary to communicate outcomes to staff and stakeholders alike.</p>
-                </div>
-                
-                <div class="content-layout">
-                    <!-- Left side - 4 Markers -->
-                    <div class="markers-container">
-                        <!-- Key Metrics Row -->
-                        <div class="marker-item">
-                            <div class="metric-item">
-                                <div class="marker-title">Project Scope</div>
+                <div class="business-context-layout">
+                    <!-- Left side - Initiative Content -->
+                    <div class="initiative-content">
+                        <div class="menu-redesign-header">
+                            <div class="header-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h3>Menu Redesign Initiative</h3>
+                        </div>
+                        
+                        <p>This month held particular importance as it marked the launch of their newly shortened menu, a strategic move to reinforce brand identity and improve operational efficiency.</p>
+                        
+                        <p>With these changes trialed across NYC and PHL branches, management wanted a way to evaluate impact. I was tasked with building a clear, visual summary to communicate outcomes to staff and stakeholders alike.</p>
+                        
+                        <!-- Metrics Grid 2x2 -->
+                        <div class="metrics-grid-2x2">
+                            <!-- Project Scope -->
+                            <div class="metric-card">
+                                <div class="metric-header">PROJECT SCOPE</div>
                                 <div class="metric-value">2</div>
                                 <div class="metric-label">CITIES</div>
                             </div>
-                        </div>
-                        
-                        <div class="marker-item">
-                            <div class="metric-item">
-                                <div class="marker-title">Timeline</div>
+                            
+                            <!-- Timeline -->
+                            <div class="metric-card">
+                                <div class="metric-header">TIMELINE</div>
                                 <div class="metric-value">Jan</div>
                                 <div class="metric-label">LAUNCH MONTH</div>
                             </div>
-                        </div>
-                        
-                        <!-- Performance Highlights -->
-                        <div class="marker-item">
-                            <div class="highlight-item revenue">
-                                <div class="marker-title">Financial Impact</div>
-                                <div class="highlight-header">January Revenue</div>
-                                <div class="highlight-value">$76,937<i class="fas fa-check-circle"></i></div>
-                                <div class="highlight-subtext">Goal: 68000 (+13.14%)</div>
+                            
+                            <!-- Financial Impact -->
+                            <div class="metric-card">
+                                <div class="metric-header">FINANCIAL IMPACT</div>
+                                <div class="metric-subheader">January Revenue</div>
+                                <div class="metric-value-container">
+                                    <span class="metric-value revenue">$76,937</span>
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="metric-label">GOAL: 68000 (+13.14%)</div>
                             </div>
-                        </div>
-                        
-                        <div class="marker-item">
-                            <div class="highlight-item popular">
-                                <div class="marker-title">Customer Preference</div>
-                                <div class="highlight-header">Pepperoni</div>
-                                <div class="highlight-subtext">most popular item</div>
+                            
+                            <!-- Customer Preference -->
+                            <div class="metric-card">
+                                <div class="metric-header">CUSTOMER PREFERENCE</div>
+                                <div class="metric-value">Pepperoni</div>
+                                <div class="metric-label">MOST POPULAR ITEM</div>
                             </div>
                         </div>
                     </div>
                     
                     <!-- Right side - Menu Image -->
                     <div class="menu-display">
-                        <div class="menu-image">
-                            <div class="embedded-menu">
-                                <div class="menu-container">
-                                    <div class="menu-header">
-                                        <h1 class="menu-title">BEN'S PIZZA</h1>
-                                    </div>
-                                    
-                                    <div class="menu-body">
-                                        <div class="menu-section">
-                                            <h2 class="section-title">SPECIAL PIZZA</h2>
-                                            <div class="menu-item">
-                                                <div class="item-details">
-                                                    <div class="item-name">Margherita</div>
-                                                    <div class="item-description">Tomato sauce, mozzarella, oregano</div>
-                                                </div>
-                                                <div class="item-prices">
-                                                    <div class="price-row">
-                                                        <span class="size-label">REG</span>
-                                                        <span class="price">$13</span>
-                                                    </div>
-                                                    <div class="price-row">
-                                                        <span class="size-label">LARGE</span>
-                                                        <span class="price">$15</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="menu-section">
-                                            <h2 class="section-title">SIGNATURE PIZZA</h2>
-                                            <div class="menu-item">
-                                                <div class="item-details">
-                                                    <div class="item-name">Pepperoni</div>
-                                                    <div class="item-description">Mozzarella, pepperoni</div>
-                                                </div>
-                                                <div class="item-prices">
-                                                    <div class="price-row">
-                                                        <span class="size-label">REG</span>
-                                                        <span class="price">$15</span>
-                                                    </div>
-                                                    <div class="price-row">
-                                                        <span class="size-label">LARGE</span>
-                                                        <span class="price">$17</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="menu-section">
-                                            <h2 class="section-title">BEVERAGES</h2>
-                                            <div class="menu-item">
-                                                <div class="item-details">
-                                                    <div class="item-name">Coca Cola</div>
-                                                    <div class="item-description">Regular or diet</div>
-                                                </div>
-                                                <div class="item-prices">
-                                                    <div class="price-row">
-                                                        <span class="size-label">33CL</span>
-                                                        <span class="price">$3</span>
-                                                    </div>
-                                                    <div class="price-row">
-                                                        <span class="size-label">1,5L</span>
-                                                        <span class="price">$6</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="menu-section">
-                                            <h2 class="section-title">SIDES</h2>
-                                            <div class="menu-item">
-                                                <div class="item-details">
-                                                    <div class="item-name">Garlic Bread</div>
-                                                    <div class="item-description">Ciabatta with garlic butter and parsley</div>
-                                                </div>
-                                                <div class="item-prices">
-                                                    <div class="price-row">
-                                                        <span class="price">$6</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="menu-section">
-                                            <h2 class="section-title">DESSERTS</h2>
-                                            <div class="menu-item">
-                                                <div class="item-details">
-                                                    <div class="item-name">Chocolate Brownie</div>
-                                                </div>
-                                                <div class="item-prices">
-                                                    <div class="price-row">
-                                                        <span class="price">$5</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="menu-footer">
-                                        New menu trialed in January across NYC and PHL branches
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu-caption">New menu trialed in January across NYC and PHL branches</div>
-                        </div>
+                        <img src="menu-snip-v2.png" alt="Ben's Pizza Menu" class="menu-image">
                     </div>
                 </div>
             </div>
@@ -323,9 +216,44 @@
         </div>
     </section>
 
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-info">
+                    <h2>Shak Adefuwa</h2>
+                    <p class="contact-title">Data Analytics Professional</p>
+                    <p class="contact-description">
+                        Passionate about transforming data into actionable business insights. 
+                        Experienced in SQL, Power BI, and business intelligence solutions 
+                        that drive operational excellence and strategic decision-making.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:sadefuwa@gmail.com">sadefuwa@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+447399769306">07399 769 306</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/shakadefuwa/" target="_blank">linkedin.com/in/shakadefuwa</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-photo">
+                    <img src="IMG-20250707-WA0003[1].jpg" alt="Shak Adefuwa" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
-            <p>&copy; 2023 Ben's Pizza Analytics Project</p>
+            <p> 2025 Ben's Pizza Analytics Project</p>
         </div>
     </footer>
 
