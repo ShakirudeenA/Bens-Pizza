@@ -24,9 +24,6 @@ To run this website locally:
 1. Clone the repository
 2. Open `index.html` in your browser
 
-## GitHub Pages
-This website is designed to be hosted on GitHub Pages. After pushing to your repository, enable GitHub Pages in the repository settings to make the site live.
-
 ## Project Files
 - `index.html`: Main HTML structure
 - `styles.css`: CSS styling
